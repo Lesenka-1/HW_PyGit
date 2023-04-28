@@ -8,7 +8,9 @@
 # 3 6 9 12 15 18
 # 6 12
 
-# n = int(input('Количество элементов вмассиве: '))
-# n = int(input('Количество элементов вмассиве: '))
-# my_list = [int(input()) for i in range(n)]
-# my_list = [int(input()) for i in range(n)]
+n = int(input('Количество элементов в первом множестве: '))
+m = int(input('Количество элементов во втором множестве: '))
+my_list1 = set([int(input()) for i in range(n)])
+my_list2 = set([int(input()) for i in range(m)])
+new_list = my_list1.intersection(my_list2)
+print(sorted(new_list))
