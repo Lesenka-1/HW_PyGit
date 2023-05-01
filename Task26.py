@@ -3,10 +3,9 @@
 # A = 2; B = 3 -> 8
 
 def stepen(a, b):
-    result = 1
-    for i in range(b):
-        result *= a
-    return result
+    if b == 1:
+        return a
+    return (a * stepen(a, b - 1))
 
 a = int(input('a = '))
 b = int(input('b = '))

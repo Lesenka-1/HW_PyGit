@@ -7,6 +7,6 @@
 def summa(a, b):
     if b == 0:
         return a
-    return summa(a+1, b-1)
+    return summa(a + 1, b - 1)
 
 print('сумма =', summa(int(input('a = ')), int(input('b = '))))
