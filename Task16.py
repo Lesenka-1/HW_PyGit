@@ -8,6 +8,6 @@
 # -> 1
 
 n = int(input('Количество элементов в массиве: '))
-my_list = [int(input()) for i in range(n)]
+my_list = [int(input()) for i in range(n)]    # = [random.randint(1, 100) for i in range(n)]
 x = int(input('число x: '))
 print('число', x, 'встречается', my_list.count(x), 'раз(а)')
